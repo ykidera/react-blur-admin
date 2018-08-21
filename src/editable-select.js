@@ -1,29 +1,30 @@
 import _ from 'lodash';
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import {Select} from './select';
 
 export class EditableSelect extends React.Component {
 
   static propTypes = {
-    onChange: React.PropTypes.func.isRequired,
-    value: React.PropTypes.node,
-    placeholder: React.PropTypes.string,
-    maxHeight: React.PropTypes.string,
-    options: React.PropTypes.arrayOf(
-      React.PropTypes.shape({
-        value: React.PropTypes.oneOfType([
-          React.PropTypes.number,
-          React.PropTypes.string,
+    onChange: PropTypes.func.isRequired,
+    value: PropTypes.node,
+    placeholder: PropTypes.string,
+    maxHeight: PropTypes.string,
+    options: PropTypes.arrayOf(
+      PropTypes.shape({
+        value: PropTypes.oneOfType([
+          PropTypes.number,
+          PropTypes.string,
         ]),
-        label: React.PropTypes.node,
+        label: PropTypes.node,
       }),
     ),
-    onSearch: React.PropTypes.func, // if label is a ReactElement, we recommend you pass in an onSearch function
-    onRenderValue: React.PropTypes.func, // if label is a ReactElement, we recommend you pass in an onRenderValue function
-    isSearchable: React.PropTypes.bool,
-    disabled: React.PropTypes.bool,
-    isBeingEdited: React.PropTypes.bool,
+    onSearch: PropTypes.func, // if label is a ReactElement, we recommend you pass in an onSearch function
+    onRenderValue: PropTypes.func, // if label is a ReactElement, we recommend you pass in an onRenderValue function
+    isSearchable: PropTypes.bool,
+    disabled: PropTypes.bool,
+    isBeingEdited: PropTypes.bool,
   }
 
   static defaultProps = {

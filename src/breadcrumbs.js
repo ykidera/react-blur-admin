@@ -1,10 +1,11 @@
 import _ from 'lodash';
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export class Breadcrumbs extends React.Component {
 
   static propTypes = {
-    className: React.PropTypes.string,
+    className: PropTypes.string,
   }
 
   static defaultProps = {

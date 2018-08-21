@@ -1,13 +1,14 @@
 import _ from 'lodash';
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export class Alert extends React.Component {
 
   static propTypes = {
-    type: React.PropTypes.string,
-    className: React.PropTypes.string,
-    isDismissible: React.PropTypes.bool,
-    onClose: React.PropTypes.func,
+    type: PropTypes.string,
+    className: PropTypes.string,
+    isDismissible: PropTypes.bool,
+    onClose: PropTypes.func,
   }
 
   static defaultProps = {

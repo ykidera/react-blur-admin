@@ -1,10 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import cx from 'classnames';
 
 export class TableRow extends React.Component {
 
   static propTypes = {
-    noTopBorder: React.PropTypes.bool,
+    noTopBorder: PropTypes.bool,
   }
 
   static defaultProps = {

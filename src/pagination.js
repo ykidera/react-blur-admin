@@ -1,13 +1,14 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import {Input} from './input';
 
 export class Pagination extends React.Component {
 
   static propTypes = {
-    currentPage: React.PropTypes.number.isRequired,
-    totalPages: React.PropTypes.number.isRequired,
-    onChange: React.PropTypes.func.isRequired,
+    currentPage: PropTypes.number.isRequired,
+    totalPages: PropTypes.number.isRequired,
+    onChange: PropTypes.func.isRequired,
   }
 
   constructor(props) {

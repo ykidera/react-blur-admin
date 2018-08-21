@@ -1,11 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Row, Col } from 'react-flex-proto';
 
 export class Page extends React.Component {
 
   static propTypes = {
-    title: React.PropTypes.string,
-    actionBar: React.PropTypes.node,
+    title: PropTypes.string,
+    actionBar: PropTypes.node,
   }
 
   renderTitle() {
